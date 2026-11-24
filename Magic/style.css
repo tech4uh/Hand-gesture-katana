@@ -1,0 +1,15 @@
+:root{--bg:#04060a;--ink:#d8ffe4}
+html,body{margin:0;height:100%;background:radial-gradient(ellipse at 50% 45%,#0a1410 0%,var(--bg) 70%);overflow:hidden;font-family:system-ui,sans-serif;color:var(--ink);touch-action:none}
+video{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;transform:scaleX(-1);opacity:.35;filter:brightness(.75) contrast(1.1) saturate(.8)}
+canvas{position:fixed;inset:0;width:100%;height:100%;transition:filter .6s}
+#ui{position:fixed;left:0;right:0;bottom:0;padding:8px 10px calc(10px + env(safe-area-inset-bottom,0px));text-align:center;font-size:13px;line-height:1.5;text-shadow:0 0 6px #000;pointer-events:none;z-index:3}
+#st{font-size:16px;color:#b6ffc9}
+#chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:6px;pointer-events:auto}
+.chip{font-size:12px;padding:5px 10px;border-radius:999px;border:1px solid #2a4a38;background:#0b1712cc;color:#bfe;cursor:pointer}
+.chip.on{background:#5df08f;color:#02150a;border-color:#5df08f}
+#panel{position:fixed;top:calc(8px + env(safe-area-inset-top,0px));right:8px;width:170px;padding:10px 12px;border-radius:12px;background:#07100bcc;border:1px solid #1d3a2b;font-size:12px;z-index:3}
+#panel label{display:block;margin-top:6px}
+#panel input[type=range]{width:100%;accent-color:#5df08f}
+#go{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:#04060af2;z-index:5;text-align:center;padding:24px}
+button{font-size:18px;padding:12px 24px;border-radius:12px;border:0;background:#5df08f;color:#02150a;cursor:pointer}
+button.alt{background:#1b2a24;color:#bfe}
